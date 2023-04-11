@@ -4,7 +4,7 @@ import { Logo } from "../../assets";
 
 const Navbar = () => {
   return (
-    <nav className={"navbar navbar-expand-lg bg-dark "}>
+    <nav className={"navbar navbar-expand-lg bg-dark px-lg-5 "}>
       <div className="container-fluid">
         <a classNameName="navbar-brand" href="#">
           <img src={Logo} alt="logo" className="logo" />
@@ -23,15 +23,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
+              <a className="nav-link " aria-current="page" href="#">
+                About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Link
+              <a className="nav-link" aria-current="page" href="#">
+                services
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link me-5" href="#">
+                Contact
+              </a>
+            </li>
+            <button class="btn btn-outline-light" type="submit">
+              Resume
+            </button>
             {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
