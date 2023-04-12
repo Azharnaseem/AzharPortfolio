@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 };

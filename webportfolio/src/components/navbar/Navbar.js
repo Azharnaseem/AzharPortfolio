@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Logo } from "../../assets";
 import "./styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+// import {check-square} from ""
 
 const Navbar = () => {
+  const [navIcon, setNavIcon] = useState(true);
+
   return (
-    <nav className={"navbar navbar-expand-lg bg-dark px-lg-5 "}>
+    <nav className={"navbar navbar-expand-lg px-lg-5 "}>
       <div className="container-fluid">
         <a classNameName="navbar-brand" href="#">
-          <img src={Logo} alt="logo" className="logo" />
+          <img src={Logo} alt="logo" className="logo img-fluid" />
         </a>
         <button
           className="navbar-toggler"
@@ -18,7 +23,13 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <FontAwesomeIcon
+            onClick={() => {
+              setNavIcon(!navIcon);
+            }}
+            icon={navIcon ? faBars : faTimes}
+            style={{ color: "white" }}
+          />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -42,7 +53,7 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
-            <button class="btn btn-outline-light" type="submit">
+            <button class="btn btn-outline-light fw-bold" type="submit">
               Resume
             </button>
             {/* <li className="nav-item dropdown">

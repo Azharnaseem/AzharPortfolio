@@ -1,0 +1,32 @@
+.header-wraper {
+  position: relative;
+  background-image: url("../../assets/hdrbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+.main-info h1 {
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.type {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  color: rgb(202, 148, 11);
+  text-transform: uppercase;
+  background-color: transparent;
+}
