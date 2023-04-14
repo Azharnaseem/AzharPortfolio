@@ -11,7 +11,9 @@
   --body: #fefefe;
   --scdry: rgb(202, 148, 11);
 }
-
+.scdry {
+  color: var(--scdry);
+}
 body {
   font-family: "Plus jakarta Sans", sans-serif;
   /* background-color: var(--body); */

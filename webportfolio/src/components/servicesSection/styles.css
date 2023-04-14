@@ -7,7 +7,7 @@ section.setup .text-header h3 {
 }
 section.setup .text-header p {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: bold;
   color: rgb(202, 148, 11);
   /* justify-content:; */
   line-height: 50px;

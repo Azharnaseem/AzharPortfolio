@@ -17,6 +17,11 @@
   right: 0;
   top: 0;
 }
+/* .main-info img {
+  border-radius: 60%;
+  width: 200px;
+  height: 200px;
+} */
 .main-info h1 {
   color: white;
   text-transform: uppercase;
@@ -32,4 +37,9 @@
   color: rgb(202, 148, 11);
   text-transform: uppercase;
   background-color: transparent;
+}
+.profileImage {
+  background-color: red;
+  border: 8px solid var(--scdry);
+  border-radius: 50%;
 }

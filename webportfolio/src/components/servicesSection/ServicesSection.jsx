@@ -6,26 +6,26 @@ import ServicesCard from "../ServicesCard/ServiceCard";
 function ServicesSection() {
   return (
     <section className="setup">
-      <div className="container">
+      <div className="container py-5">
         <div className="text-header text-center">
           <h3>Our Services</h3>
           <p>We provide best Work to worlwide Clients</p>
         </div>
-        <div className="item ">
+        <div className="item">
           <div className="row ">
-            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
               <ServicesCard
                 title="Web Development"
                 subtitle="React responsive"
               />
             </div>
-            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
               <ServicesCard title="App Development" />
             </div>
-            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
               <ServicesCard title="UI/UX" subtitle="Mobile & Web" />
             </div>
-            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
               <ServicesCard title="WordPress" subtitle="e-Commerce" />
             </div>
           </div>

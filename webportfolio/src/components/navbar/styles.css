@@ -1,6 +1,8 @@
 /*navbar =====*/
 .navbar {
+  color: white;
   background-color: var(--black);
+  padding: 15px 0;
 }
 .logo {
   width: 10rem;
@@ -11,8 +13,12 @@ a.active {
   font-weight: bold;
   color: white;
 }
+.navbar span {
+  color: rgb(202, 148, 11);
+}
 
 .navbar-brand {
+  color: white;
   /* background-color: red; */
   max-width: 20px;
   max-height: 200px;
@@ -26,8 +32,16 @@ a.active {
   /* background-color: red; */
   border-top: 2px solid var(--black);
 }
+.navbar h3 {
+  font-family: cursive;
+}
 .navbar-nav .nav-item a:hover {
-  border-top: 2px solid var(--white);
+  color: rgb(202, 148, 11);
+  border-top: 2px solid rgb(202, 148, 11);
+}
+.btn:hover {
+  border-color: rgb(202, 148, 11);
+  background-color: rgb(202, 148, 11);
 }
 /* .navbar-toggler-icon {
   font-family: FontAwesome;

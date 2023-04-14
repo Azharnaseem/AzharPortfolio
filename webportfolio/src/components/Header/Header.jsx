@@ -1,11 +1,25 @@
 import React from "react";
 import "./styles.css";
 import TypeMe, { LineBreak, Delete, Delay } from "react-typeme";
+import { AppDev, Profile } from "../../assets";
 
 function Header() {
   return (
     <div className="header-wraper">
       <div className="main-info">
+        <div className="profileImage">
+          <img
+            src={Profile}
+            alt="hero-img"
+            className="img-fluid"
+            style={{
+              width: "190px",
+              borderRadius: "60%",
+              // width: 200px;
+              height: "190px",
+            }}
+          />
+        </div>
         <h1>
           hello I AM{" "}
           <TypeMe
@@ -16,7 +30,7 @@ function Header() {
             strings={["AZHAR NASEEM", <Delete />, <Delay ms={2000} />]}
           />
         </h1>
-        <h1>Web development and Mobile Apps (IOS & android)</h1>
+        <h1>Web and Mobile App Developer(IOS & android)</h1>
         <TypeMe
           typingSpeed={200}
           loop

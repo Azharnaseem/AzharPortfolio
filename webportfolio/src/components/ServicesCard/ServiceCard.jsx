@@ -9,11 +9,11 @@ function ServicesCard({
   subtitle = "Android & IOS",
 }) {
   return (
-    <div className="card my-4" style={{ width: "20rem" }}>
+    <div className="card my-4" style={{ width: "18rem" }}>
       <img src={HeaderBack} className="card-img-top" alt="..." />
       <div className="card-body">
         <h3>{title}</h3>
-        <h5>{subtitle}</h5>
+        <h5 className="scdry">{subtitle}</h5>
         <p className="card-text">{description}</p>
       </div>
     </div>

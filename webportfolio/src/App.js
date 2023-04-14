@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 // import { Navbar } from "./components";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         {/* <Header /> */}
         {/* <Home /> */}
       </Routes>
+      <Footer />
     </>
   );
 }

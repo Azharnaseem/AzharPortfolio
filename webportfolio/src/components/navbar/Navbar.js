@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Logo } from "../../assets";
+import { Logo, Resume } from "../../assets";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -12,9 +12,12 @@ const Navbar = () => {
   return (
     <nav className={"navbar navbar-expand-lg px-lg-5 "}>
       <div className="container-fluid">
-        <a classNameName="navbar-brand" href="#">
-          <img src={Logo} alt="logo" className="logo img-fluid" />
-        </a>
+        {/* <a classNameName="navbar-brand" href="#"> */}
+        <h3>
+          <span>Azhar</span> Naseem
+        </h3>
+        {/* <img src={Logo} alt="logo" className="logo img-fluid" /> */}
+        {/* </a> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -54,9 +57,13 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
-            <button class="btn btn-outline-light fw-bold" type="submit">
+            <a
+              href={Resume}
+              class="btn btn-outline-light fw-bold"
+              type="submit"
+            >
               Resume
-            </button>
+            </a>
             {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
