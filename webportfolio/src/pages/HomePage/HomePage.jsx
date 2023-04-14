@@ -1,11 +1,14 @@
 import React from "react";
-import AppDev from "../../assets/appdev.png";
 import "./styles.css";
 import Navbar from "../../components/navbar/Navbar";
+import { App, AppDev } from "../../assets";
+import Header from "../../components/Header/Header";
+import ServicesSection from "../../components/servicesSection/ServicesSection";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <section className="hero">
         <div className="container">
           <div className="row">
@@ -24,11 +27,12 @@ const Home = () => {
             </div>
 
             <div className="col-md-6">
-              <img src={AppDev} alt="hero-img" className="w-100" />
+              <img src={AppDev} alt="hero-img" className=" img-fluid" />
             </div>
           </div>
         </div>
       </section>
+      <ServicesSection />
       {/* <Navbar /> */}
     </div>
   );

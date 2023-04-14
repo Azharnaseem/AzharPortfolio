@@ -1,0 +1,24 @@
+section.setup .text-header h3 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--black);
+
+  /* background-color: red; */
+}
+section.setup .text-header p {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgb(202, 148, 11);
+  /* justify-content:; */
+  line-height: 50px;
+
+  /* padding: 10px 0;
+  border-bottom: 2px solid var(--scdry); */
+}
+@media (max-width: 576px) {
+  section.setup {
+    text-align: center;
+    margin: 0, 120px;
+    /* background-color: red; */
+  }
+}

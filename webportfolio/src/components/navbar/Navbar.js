@@ -3,6 +3,7 @@ import { Logo } from "../../assets";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 // import {check-square} from ""
 
 const Navbar = () => {
@@ -34,14 +35,14 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <Link className="nav-link " aria-current="page" to="/">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                services
-              </a>
+              <Link className="nav-link " aria-current="page" to="/about">
+                Services
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">

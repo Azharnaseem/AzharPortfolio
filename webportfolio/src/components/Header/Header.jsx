@@ -6,6 +6,16 @@ function Header() {
   return (
     <div className="header-wraper">
       <div className="main-info">
+        <h1>
+          hello I AM{" "}
+          <TypeMe
+            typingSpeed={200}
+            loop
+            backspaceDelay={2000}
+            className={"type"}
+            strings={["AZHAR NASEEM", <Delete />, <Delay ms={2000} />]}
+          />
+        </h1>
         <h1>Web development and Mobile Apps (IOS & android)</h1>
         <TypeMe
           typingSpeed={200}
