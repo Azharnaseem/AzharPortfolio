@@ -9,21 +9,16 @@ import Header from "./components/Header/Header";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
 import Footer from "./components/footer/footer";
-
+import SiteLayout from "./layout/siteLayout/SiteLayout";
+import AuthLayout from "./layout/authLayout/AuthLayout";
+// import SiteLayout from "./layout/siteLayout/SiteLayout";
+import { useDispatch, useSelector } from "react-redux";
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" Component={Home} />
-        <Route path="/about" Component={About} />
-
-        {/* <Header /> */}
-        {/* <Home /> */}
-      </Routes>
-      <Footer />
-    </>
-  );
+  const user = useSelector((state) => state.user.user);
+  console.log("====================================");
+  console.log(user);
+  console.log("====================================");
+  return <>{!user ? <AuthLayout /> : <SiteLayout />}</>;
 }
 
 export default App;
