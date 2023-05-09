@@ -1,7 +1,10 @@
 .card:hover {
+  width: 130px;
   transform: scale(1.2);
-  animation-name: bounce;
-  animation-timing-function: ease;
+  transition-duration: 1s;
+  /* transition-delay: 1s; */
+  /* animation-name: bounce;
+  animation-timing-function: ease; */
 }
 .card h5 {
   color: var(--scdry);

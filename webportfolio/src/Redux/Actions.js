@@ -1,4 +1,4 @@
-import { LOGIN } from "./ActionTypes";
+import { LOGIN, LOGOUT, EMPTY_KEY } from "./ActionTypes";
 
 export const userLogin = (data) => async (dispatch) => {
   dispatch({
@@ -10,3 +10,12 @@ export const userLogin = (data) => async (dispatch) => {
 /**
  * @description also removes all key/value pairs in local-storage
  */
+export const userLogout = () => (dispatch) => {
+  localStorage.clear();
+  dispatch({
+    type: LOGOUT,
+  });
+  dispatch({
+    type: EMPTY_KEY,
+  });
+};

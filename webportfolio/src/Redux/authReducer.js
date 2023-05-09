@@ -1,4 +1,4 @@
-import { LOGIN } from "./ActionTypes";
+import { LOGIN, LOGOUT } from "./ActionTypes";
 
 const initialState = {
   user: null,
@@ -11,7 +11,7 @@ export const User = (state = initialState, action) => {
       return {
         ...state,
         user: action.payload,
-        isLogin: true,
+        islogin: true,
       };
     }
     case LOGOUT: {

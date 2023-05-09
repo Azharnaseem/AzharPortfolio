@@ -4,12 +4,15 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { User } from "./authReducer";
+import { Key } from "./Reducers/sidebarKey";
 
 const rootReducer = combineReducers({
   user: User,
+  key: Key,
 });
 
 const persistConfig = {
+  key: "root",
   storage,
 };
 

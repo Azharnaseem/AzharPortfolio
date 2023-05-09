@@ -13,11 +13,13 @@ import SiteLayout from "./layout/siteLayout/SiteLayout";
 import AuthLayout from "./layout/authLayout/AuthLayout";
 // import SiteLayout from "./layout/siteLayout/SiteLayout";
 import { useDispatch, useSelector } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+
 function App() {
   const user = useSelector((state) => state.user.user);
-  console.log("====================================");
-  console.log(user);
-  console.log("====================================");
+
+  // console.log(user);
+
   return <>{!user ? <AuthLayout /> : <SiteLayout />}</>;
 }
 
